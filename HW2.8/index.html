@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <input placeholder="search" type="text" id="search">
+    <button onclick="Search()">search</button>
+    <input placeholder="min" type="text" id="min">
+    <input placeholder="max" type="text" id="max">
+
+    <button onclick="Filter()">filter</button>
+    <button onclick="Clear()">clear</button>
+    <button onclick="Open()">open</button>
+
+
+    <div  id="mask">
+        <div class="form">
+            <span onclick="Close()">X</span>
+            <input id="title" placeholder="title:" type="text">
+            <input id="description" placeholder="description" type="text">
+            <input id="img" placeholder="img" type="text">
+            <input id="price" placeholder="price" type="text">
+            <input id="oldPrice" placeholder="oldPrice" type="text">
+            <input id="id" placeholder="id" type="text">
+            <button onclick="AddNewObg()">add</button>
+        </div>
+    </div>
+
+
+    <button onclick="Delete()">delete</button>
+    
+
+    
+    <div id="container"></div>
+  
+
+
+  
+    <script src="./script.js"></script>
+</body>
+
+</html>
